@@ -13,7 +13,7 @@ const Hero = () => {
   console.log('portfolioData:', portfolioData);
 
   // Flatten all quotes from all categories
-  const allQuotes = quotesData.quotes.flatMap(category => category.quotes);
+  const allQuotes = quotesData?.quotes?.flatMap(category => category.quotes) || [];
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -27,6 +27,8 @@ const Hero = () => {
 
   // Effect for rotating quotes every 5 seconds
   useEffect(() => {
+    if (allQuotes.length === 0) return;
+    
     const interval = setInterval(() => {
       setQuoteIndex(prev => (prev + 1) % allQuotes.length);
     }, 5000);
@@ -36,6 +38,8 @@ const Hero = () => {
 
   // Effect to update current quote when quoteIndex changes
   useEffect(() => {
+    if (allQuotes.length === 0) return;
+    
     const newQuote = allQuotes[quoteIndex] || allQuotes[0] || '';
     setCurrentQuote(newQuote);
     console.log('Current quote:', newQuote, 'Index:', quoteIndex);

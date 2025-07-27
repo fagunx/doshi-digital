@@ -10,7 +10,8 @@ const About = () => {
 
   const getRandomQuote = () => {
     // Flatten all quotes from all categories into a single array
-    const allQuotes = quotesData.quotes.flatMap(category => category.quotes);
+    const allQuotes = quotesData?.quotes?.flatMap(category => category.quotes) || [];
+    if (allQuotes.length === 0) return 'Code is like humor. When you have to explain it, it\'s bad.';
     const randomIndex = Math.floor(Math.random() * allQuotes.length);
     return allQuotes[randomIndex];
   };

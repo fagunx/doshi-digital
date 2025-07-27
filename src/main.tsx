@@ -4,6 +4,8 @@ import App from './App.tsx'
 import './index.css'
 
 // Register Service Worker for PWA
+// Temporarily disabled for debugging
+/*
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
@@ -15,6 +17,7 @@ if ('serviceWorker' in navigator) {
       });
   });
 }
+*/
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
