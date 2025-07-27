@@ -1,0 +1,133 @@
+{
+  "personal": {
+    "name": "Fagun Doshi",
+    "title": "Full-Stack .NET Developer",
+    "tagline": "Building scalable apps | Writing clean code | Turning ideas into interfaces",
+    "email": "fagundoshi.2210@gmail.com",
+    "phone": "+91 9724526730",
+    "location": "Ahmedabad, India",
+    "bio": [
+      "Software Developer with 2+ years of experience developing scalable web applications using C# .NET Framework, Angular, and JavaScript.",
+      "Proven track record in Agile environments, delivering key business modules including payroll, accounting, and inventory management. Passionate about transforming complex requirements into efficient, user-focused solutions that drive business value.",
+      "Expertise in code optimization, performance enhancement, and maintaining high code quality standards. Proactively identify pain points and lead efforts to clean up legacy code and fix bugs."
+    ],
+    "resumeUrl": "/resume.pdf",
+    "social": {
+      "github": "https://github.com/fagundoshi",
+      "linkedin": "https://linkedin.com/in/fagundoshi",
+      "twitter": "https://twitter.com/fagundoshi",
+      "portfolio": "https://fagundoshi.dev"
+    }
+  },
+  "skills": {
+    "frontend": [
+      { "name": "Angular", "level": 90, "icon": "⚡" },
+      { "name": "JavaScript", "level": 85, "icon": "⚡" },
+      { "name": "HTML", "level": 95, "icon": "🌐" },
+      { "name": "CSS/SCSS", "level": 90, "icon": "🎨" },
+      { "name": "ASP.NET MVC", "level": 85, "icon": "🔧" }
+    ],
+    "backend": [
+      { "name": "C#", "level": 90, "icon": "💜" },
+      { "name": ".NET Framework", "level": 85, "icon": "🚀" },
+      { "name": "ASP.NET Core", "level": 85, "icon": "🔧" },
+      { "name": "RESTful APIs", "level": 90, "icon": "🔌" },
+      { "name": "Entity Framework", "level": 80, "icon": "📊" },
+      { "name": "LINQ", "level": 85, "icon": "🔍" }
+    ],
+    "database": [
+      { "name": "SQL Server", "level": 85, "icon": "🗄️" },
+      { "name": "T-SQL", "level": 80, "icon": "📝" },
+      { "name": "Database Design", "level": 75, "icon": "🗃️" }
+    ],
+    "tools": [
+      { "name": "Visual Studio", "level": 90, "icon": "🔨" },
+      { "name": "VS Code", "level": 95, "icon": "💻" },
+      { "name": "Git/GitHub", "level": 85, "icon": "🌿" },
+      { "name": "Postman", "level": 85, "icon": "📮" },
+      { "name": "SVN", "level": 75, "icon": "📦" },
+      { "name": "DevExpress", "level": 80, "icon": "📊" }
+    ]
+  },
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "TatvaSoft",
+      "duration": "Jul 2023 - Present",
+      "location": "Ahmedabad, India",
+      "description": "Full software development lifecycle experience, from requirements gathering to final deployment. Collaborated in Agile teams with design, mobile, and QA engineers to refine user journeys and ensure cross-team alignment for successful, timely product iterations.",
+      "achievements": [
+        "Developed a payroll module that processed employee data and salaries, driving a 20% increase in the client's user base",
+        "Proactively identified pain points and led efforts to clean up legacy code and fix bugs, resulting in a 30% reduction in customer support tickets",
+        "Contributed to the development and maintenance of key modules including payroll, accounting, and inventory management, ensuring seamless integration and consistent application of best practices"
+      ]
+    },
+    {
+      "title": "Software Developer Intern",
+      "company": "TatvaSoft",
+      "duration": "Jan 2023 - Jun 2023",
+      "location": "Ahmedabad, India",
+      "description": "Developed and debugged applications using C# and .NET Framework. Designed and implemented feature enhancements for key modules. Contributed to database integration and performed unit testing.",
+      "achievements": [
+        "Wrote efficient, maintainable code following best practices and coding standards",
+        "Participated in debugging and bug fixing, improving overall application performance",
+        "Contributed to database integration and performed unit testing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E in Computer Engineering",
+      "institution": "LJ Institute of Engineering and Technology (GTU)",
+      "duration": "2019 - 2023",
+      "location": "Ahmedabad, India",
+      "gpa": "9.24 CGPA"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Supermarket-Style E-Commerce Platform",
+      "description": "A comprehensive e-commerce platform with payroll computation, inventory management, and accounting modules. Built with ASP.NET Core and Angular, featuring advanced reporting and business logic.",
+      "technologies": ["ASP.NET Core", "Angular", "SQL Server", "DevExpress", "Entity Framework"],
+      "features": [
+        "Developed salary computation business logic (absence, taxes, overtime)",
+        "Built reports and dashboards using DevExpress for improved data accessibility",
+        "Optimized legacy codebases across modules for performance and maintainability",
+        "Managed account transactions and payment processing",
+        "Maintained inventory management system, optimizing stock tracking and reducing discrepancies"
+      ],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "image": "/projects/ecommerce.jpg"
+    },
+    {
+      "title": "Community Outreach Web Platform",
+      "description": "Full-stack community website with user registration, posts, events, and photo uploads. Implemented secure authentication with role-based access control.",
+      "technologies": ["ASP.NET Core", "Angular", "SQL Server", "Authentication", "File Upload"],
+      "features": [
+        "Built full-stack community website with user registration and management",
+        "Implemented secure authentication with role-based access control",
+        "Created event management and photo upload functionality",
+        "Designed responsive user interface for community engagement"
+      ],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "image": "/projects/community.jpg"
+    },
+    {
+      "title": "Payroll Management System",
+      "description": "Comprehensive payroll system that processes employee data and salaries with advanced business logic for absence, taxes, and overtime calculations.",
+      "technologies": ["C#", ".NET Framework", "SQL Server", "DevExpress", "LINQ"],
+      "features": [
+        "Developed salary computation business logic (absence, taxes, overtime)",
+        "Built reports and dashboards using DevExpress for improved data accessibility",
+        "Optimized legacy codebases across modules for performance and maintainability",
+        "Conducted code reviews and mentored peers",
+        "Drove 20% increase in client's user base through improved functionality"
+      ],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "image": "/projects/payroll.jpg"
+    }
+  ]
+}

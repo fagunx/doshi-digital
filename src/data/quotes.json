@@ -1,0 +1,134 @@
+{
+  "quotes": [
+    {
+      "category": "Programming Wisdom",
+      "quotes": [
+        "Code is like humor. When you have to explain it, it's bad.",
+        "The best error message is the one that never shows up.",
+        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+        "First, solve the problem. Then, write the code.",
+        "It's not a bug – it's an undocumented feature.",
+        "The only way to learn a new programming language is by writing programs in it.",
+        "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code.",
+        "Programming isn't about what you know; it's about what you can figure out.",
+        "The most damaging phrase in the language is 'We've always done it this way.'",
+        "Debugging is twice as hard as writing the code in the first place.",
+        "Talk is cheap. Show me the code.",
+        "I'm not a great programmer; I'm just a good programmer with great habits.",
+        "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
+        "Without requirements or design, programming is the art of adding bugs to an empty text file.",
+        "A good programmer is someone who always looks both ways before crossing a one-way street."
+      ]
+    },
+    {
+      "category": "Funny Programming Quotes",
+      "quotes": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "A SQL query goes into a bar, walks up to two tables and asks, 'Can I join you?'",
+        "Why do Java developers wear glasses? Because they can't C#!",
+        "How many programmers does it take to change a light bulb? None, that's a hardware problem.",
+        "Why do programmers always mix up Halloween and Christmas? Because Oct 31 == Dec 25!",
+        "What do you call a programmer from Finland? Nerdic.",
+        "Why did the programmer quit his job? Because he didn't get arrays.",
+        "What's a programmer's favorite hangout place? Foo Bar.",
+        "Why did the scarecrow win an award? He was outstanding in his field!",
+        "What do you call a bear with no teeth? A gummy bear!",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the math book look so sad? Because it had too many problems!",
+        "What do you call a can opener that doesn't work? A can't opener!"
+      ]
+    },
+    {
+      "category": "Tech Humor",
+      "quotes": [
+        "My code doesn't work, I have no idea why. My code works, I have no idea why.",
+        "The Internet: where men are men, women are men, and children are FBI agents.",
+        "I would love to change the world, but they won't give me the source code.",
+        "There are only 10 types of people in the world: those who understand binary and those who don't.",
+        "A computer is like air conditioning - it becomes useless when you open Windows.",
+        "Hardware: the parts of a computer that can be kicked.",
+        "Software: the parts of a computer that can be cursed.",
+        "A bug in the hand is better than one as yet undiscovered.",
+        "The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time.",
+        "The best way to predict the future is to implement it.",
+        "If debugging is the process of removing software bugs, then programming must be the process of putting them in."
+      ]
+    },
+    {
+      "category": "Motivational Tech Quotes",
+      "quotes": [
+        "The future belongs to those who believe in the beauty of their dreams.",
+        "Innovation distinguishes between a leader and a follower.",
+        "The only way to do great work is to love what you do.",
+        "Stay hungry, stay foolish.",
+        "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "The only limit to our realization of tomorrow will be our doubts of today.",
+        "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+        "The way to get started is to quit talking and begin doing.",
+        "It does not matter how slowly you go as long as you do not stop.",
+        "The future depends on what you do today.",
+        "Believe you can and you're halfway there.",
+        "The only person you are destined to become is the person you decide to be.",
+        "Don't watch the clock; do what it does. Keep going."
+      ]
+    },
+    {
+      "category": "Random Fun Facts",
+      "quotes": [
+        "Did you know? The first computer bug was an actual bug - a moth trapped in a Harvard Mark II computer in 1947!",
+        "Fun fact: The word 'robot' was first introduced in 1920 by Czech playwright Karel Čapek.",
+        "Did you know? The first domain name ever registered was symbolics.com on March 15, 1985.",
+        "Fun fact: The average person spends 6 years of their life waiting for red lights to turn green.",
+        "Did you know? Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!",
+        "Fun fact: A day on Venus is longer than its year.",
+        "Did you know? The shortest war in history was between Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after just 38 minutes.",
+        "Fun fact: A group of flamingos is called a 'flamboyance'.",
+        "Did you know? The average person walks the equivalent of three times around the world in a lifetime.",
+        "Fun fact: Bananas are berries, but strawberries aren't!",
+        "Did you know? The Great Wall of China is not visible from space with the naked eye, contrary to popular belief.",
+        "Fun fact: A day on Mars is only 37 minutes longer than a day on Earth.",
+        "Fun fact: The first oranges weren't orange - they were green!"
+      ]
+    },
+    {
+      "category": "Programming Puns",
+      "quotes": [
+        "What do you call a programmer who doesn't comment their code? A mystery novelist.",
+        "Why did the database administrator leave his wife? Because of too many relationships.",
+        "What do you call a programmer who's afraid of the dark? A scaredy-cat.",
+        "Why did the programmer go broke? Because he used up all his cache.",
+        "What do you call a programmer who's good at math? A calculator.",
+        "Why did the programmer get fired? Because he couldn't handle the pressure.",
+        "What do you call a programmer who's always late? A procrastinator.",
+        "Why did the programmer go to the doctor? Because he had a bug.",
+        "What do you call a programmer who's always happy? A debugger.",
+        "Why did the programmer go to the beach? To catch some rays.",
+        "What do you call a programmer who's always cold? A freeze-dried developer.",
+        "Why did the programmer go to the gym? To work on his core.",
+        "What do you call a programmer who's always tired? A sleepy coder.",
+        "Why did the programmer go to the library? To check out some books."
+      ]
+    },
+    {
+      "category": "Life & Philosophy",
+      "quotes": [
+        "Life is what happens when you're busy making other plans.",
+        "The only way to do great work is to love what you do.",
+        "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "The future belongs to those who believe in the beauty of their dreams.",
+        "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+        "The way to get started is to quit talking and begin doing.",
+        "It does not matter how slowly you go as long as you do not stop.",
+        "The future depends on what you do today.",
+        "Believe you can and you're halfway there.",
+        "The only person you are destined to become is the person you decide to be.",
+        "Don't watch the clock; do what it does. Keep going.",
+        "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "The only limit to our realization of tomorrow will be our doubts of today.",
+        "The journey of a thousand miles begins with one step."
+      ]
+    }
+  ]
+} 
