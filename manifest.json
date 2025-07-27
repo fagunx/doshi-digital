@@ -1,0 +1,14 @@
+{
+  "name": "Fagun Doshi - Full-Stack .NET Developer",
+  "short_name": "CodeCraft Studio",
+  "description": "Full-Stack .NET Developer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "icons": [],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+} 
