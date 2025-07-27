@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/doshi-digital-profile-main/",
+  base: "/doshi-digital/",
   server: {
     host: "::",
     port: 8080,
