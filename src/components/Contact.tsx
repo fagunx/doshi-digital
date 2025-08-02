@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 
 const Contact = () => {
@@ -34,6 +34,10 @@ const Contact = () => {
     { name: 'LinkedIn', icon: Linkedin, url: portfolioData.personal.social.linkedin, color: 'text-blue-400' },
     { name: 'Twitter', icon: Twitter, url: portfolioData.personal.social.twitter, color: 'text-blue-400' }
   ];
+
+  const handleDownloadResume = () => {
+    window.open(portfolioData.personal.resumeUrl, '_blank');
+  };
 
   return (
     <section ref={sectionRef} id="contact" className="py-20 bg-surface">
@@ -104,6 +108,16 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-foreground">Location</p>
                     <p className="text-muted-foreground">{portfolioData.personal.location}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 p-4 bg-surface-elevated rounded-lg border border-border hover-lift transition-smooth cursor-pointer" onClick={handleDownloadResume}>
+                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                    <Download className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">Resume</p>
+                    <p className="text-muted-foreground">Download my resume</p>
                   </div>
                 </div>
               </div>
