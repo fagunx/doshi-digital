@@ -1,11 +1,16 @@
 // Simple analytics utility for tracking user interactions
-export const trackEvent = (eventName: string, properties?: Record<string, any>) => {
+declare global {
+  interface Window {
+    gtag?: (command: 'event', eventName: string, params?: Record<string, unknown>) => void;
+  }
+}
+export const trackEvent = (eventName: string, properties?: Record<string, unknown>) => {
   // In a real app, you'd send this to your analytics service
   console.log('Analytics Event:', eventName, properties);
   
   // Example: Google Analytics 4
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', eventName, properties);
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, properties);
   }
 };
 

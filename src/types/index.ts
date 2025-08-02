@@ -85,6 +85,6 @@ export interface ScrollAnimationOptions {
 // Analytics types
 export interface AnalyticsEvent {
   eventName: string;
-  properties?: Record<string, any>;
+  properties?: Record<string, unknown>;
   timestamp?: number;
 } 
