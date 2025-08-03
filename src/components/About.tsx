@@ -72,7 +72,7 @@ const About = () => {
                   <div className="w-80 h-80 mx-auto bg-gradient-primary rounded-2xl shadow-2xl glow-primary flex items-center justify-center p-1">
                     <div className="w-72 h-72 bg-surface rounded-xl overflow-hidden">
                       <img 
-                        src="/images/profile.jpg" 
+                        src={`${import.meta.env.BASE_URL}images/profile.jpg`}                 
                         alt="Fagun Doshi - Professional Photo" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
