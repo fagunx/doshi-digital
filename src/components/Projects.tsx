@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Code, Database, Globe } from 'lucide-react';
+import { ArrowForward, Code, Storage, Language } from '@mui/icons-material';
 import portfolioData from '@/data/portfolio.json';
 
 const Projects = () => {
@@ -37,7 +37,7 @@ const Projects = () => {
     .slice(0, 2);
 
   const projectIcons = {
-    'Supermarket-Style E-Commerce Platform': <Globe className="w-6 h-6" />,
+    'Supermarket-Style E-Commerce Platform': <Language className="w-6 h-6" />,
     'Community Outreach Web Platform': <Code className="w-6 h-6" />
   };
 
@@ -67,7 +67,7 @@ const Projects = () => {
                 <div className="mb-6">
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-primary-foreground">
-                      {projectIcons[project.title as keyof typeof projectIcons] || <Database className="w-6 h-6" />}
+                      {projectIcons[project.title as keyof typeof projectIcons] || <Storage className="w-6 h-6" />}
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
@@ -125,10 +125,10 @@ const Projects = () => {
                     <span className="text-xs text-muted-foreground">
                       {project.technologies.length} technologies used
                     </span>
-                    <div className="flex items-center space-x-2 text-primary group-hover:text-primary/80 transition-colors">
+                    {/* <div className="flex items-center space-x-2 text-primary group-hover:text-primary/80 transition-colors">
                       <span className="text-sm font-medium">View Details</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                      <ArrowForward className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div> */}
                   </div>
                 </div>
               </Card>

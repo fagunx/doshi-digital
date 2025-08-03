@@ -1,4 +1,4 @@
-import { Loader2 } from 'lucide-react';
+import { CircularProgress } from '@mui/material';
 
 interface LoadingSpinnerProps {
   size?: 'sm' | 'md' | 'lg';
@@ -15,7 +15,7 @@ const LoadingSpinner = ({ size = 'md', text, className = '' }: LoadingSpinnerPro
 
   return (
     <div className={`flex flex-col items-center justify-center space-y-3 ${className}`}>
-      <Loader2 className={`${sizeClasses[size]} animate-spin text-primary`} />
+      <CircularProgress size={size === 'sm' ? 16 : size === 'md' ? 24 : 32} className="text-primary" />
       {text && (
         <p className="text-sm text-muted-foreground animate-pulse">{text}</p>
       )}

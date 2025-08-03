@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download } from 'lucide-react';
+import { Email, Phone, LocationOn, GitHub, LinkedIn, Twitter, Download } from '@mui/icons-material';
 import portfolioData from '@/data/portfolio.json';
 
 const Contact = () => {
@@ -30,8 +30,8 @@ const Contact = () => {
   }, []);
 
   const socialLinks = [
-    { name: 'GitHub', icon: Github, url: portfolioData.personal.social.github, color: 'text-foreground' },
-    { name: 'LinkedIn', icon: Linkedin, url: portfolioData.personal.social.linkedin, color: 'text-blue-400' },
+    { name: 'GitHub', icon: GitHub, url: portfolioData.personal.social.github, color: 'text-foreground' },
+    { name: 'LinkedIn', icon: LinkedIn, url: portfolioData.personal.social.linkedin, color: 'text-blue-400' },
     { name: 'Twitter', icon: Twitter, url: portfolioData.personal.social.twitter, color: 'text-blue-400' }
   ];
 
@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="space-y-6 fade-in-left">
                 <div className="flex items-center space-x-4 p-4 bg-surface-elevated rounded-lg border border-border hover-lift transition-smooth">
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary" />
+                    <Email className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
@@ -103,7 +103,7 @@ const Contact = () => {
 
                 <div className="flex items-center space-x-4 p-4 bg-surface-elevated rounded-lg border border-border hover-lift transition-smooth">
                   <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-secondary" />
+                    <LocationOn className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Location</p>

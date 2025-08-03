@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { DarkMode, LightMode, Menu, Close } from '@mui/icons-material';
 import { useTheme } from '@/contexts/ThemeContext';
 
 const Navigation = () => {
@@ -66,7 +66,7 @@ const Navigation = () => {
               onClick={toggleTheme}
               className="hover:bg-accent hover:text-accent-foreground"
             >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              {isDark ? <LightMode className="h-4 w-4" /> : <DarkMode className="h-4 w-4" />}
             </Button>
 
             {/* Mobile Menu Button */}
@@ -76,7 +76,7 @@ const Navigation = () => {
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMobileMenuOpen ? <Close className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
           </div>
         </div>

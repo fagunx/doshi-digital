@@ -1,5 +1,24 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
+import { 
+  FlashOn, 
+  Language, 
+  Palette, 
+  Build, 
+  Code, 
+  RocketLaunch, 
+  Settings, 
+  Power, 
+  Search, 
+  Storage, 
+  Edit, 
+  Computer, 
+  Monitor, 
+  GitHub, 
+  Mail, 
+  LocalShipping, 
+  Assessment 
+} from '@mui/icons-material';
 import portfolioData from '@/data/portfolio.json';
 
 const Skills = () => {
@@ -29,30 +48,49 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Icon mapping for skills
+  const skillIconMap: { [key: string]: React.ComponentType } = {
+    'FlashOn': FlashOn,
+    'Language': Language,
+    'Palette': Palette,
+    'Build': Build,
+    'Code': Code,
+    'RocketLaunch': RocketLaunch,
+    'Power': Power,
+    'Assessment': Assessment,
+    'Search': Search,
+    'Storage': Storage,
+    'Edit': Edit,
+    'Computer': Computer,
+    'GitHub': GitHub,
+    'Mail': Mail,
+    'LocalShipping': LocalShipping
+  };
+
   const skillCategories = [
     { 
       name: 'Frontend', 
       skills: portfolioData.skills.frontend, 
       gradient: 'from-blue-500 to-cyan-500',
-      icon: '🎨'
+      icon: Palette
     },
     { 
       name: 'Backend', 
       skills: portfolioData.skills.backend, 
       gradient: 'from-purple-500 to-pink-500',
-      icon: '⚙️'
+      icon: Settings
     },
     { 
       name: 'Database', 
       skills: portfolioData.skills.database, 
       gradient: 'from-green-500 to-emerald-500',
-      icon: '🗄️'
+      icon: Storage
     },
     { 
       name: 'Tools', 
       skills: portfolioData.skills.tools, 
       gradient: 'from-orange-500 to-red-500',
-      icon: '🛠️'
+      icon: Build
     }
   ];
 
@@ -80,8 +118,8 @@ const Skills = () => {
               >
                 {/* Category Header */}
                 <div className="mb-8 flex items-center space-x-4">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center text-white text-xl shadow-lg`}>
-                    {category.icon}
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center text-white shadow-lg`}>
+                    <category.icon className="w-6 h-6" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-foreground">
@@ -100,8 +138,18 @@ const Skills = () => {
                       style={{ animationDelay: `${skillIndex * 0.1}s` }}
                     >
                       <div className="flex items-center space-x-3">
-                        <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                          {skill.icon}
+                        <span className="group-hover:scale-110 transition-transform duration-300">
+                          {skillIconMap[skill.icon] ? 
+                            (() => {
+                              const IconComponent = skillIconMap[skill.icon];
+                              return (
+                                <div style={{ fontSize: 24 }}>
+                                  <IconComponent />
+                                </div>
+                              );
+                            })() : 
+                            <span className="text-2xl">{skill.icon}</span>
+                          }
                         </span>
                         <span className="font-semibold text-foreground group-hover:text-primary transition-colors">
                           {skill.name}

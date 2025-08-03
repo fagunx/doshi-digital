@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Calendar, Award } from 'lucide-react';
+import { LocationOn, CalendarToday, EmojiEvents } from '@mui/icons-material';
 import portfolioData from '@/data/portfolio.json';
 
 const Experience = () => {
@@ -80,11 +80,11 @@ const Experience = () => {
                         </div>
                         <div className="flex flex-col md:items-end mt-2 md:mt-0 space-y-1">
                           <div className="flex items-center text-muted-foreground">
-                            <Calendar className="w-4 h-4 mr-1" />
+                            <CalendarToday className="w-4 h-4 mr-1" />
                             <span className="text-sm">{exp.duration}</span>
                           </div>
                           <div className="flex items-center text-muted-foreground">
-                            <MapPin className="w-4 h-4 mr-1" />
+                            <LocationOn className="w-4 h-4 mr-1" />
                             <span className="text-sm">{exp.location}</span>
                           </div>
                         </div>
@@ -96,7 +96,7 @@ const Experience = () => {
 
                       <div className="space-y-3">
                         <h5 className="font-medium text-accent flex items-center">
-                          <Award className="w-4 h-4 mr-2" />
+                          <EmojiEvents className="w-4 h-4 mr-2" />
                           Key Achievements
                         </h5>
                         <ul className="space-y-2">
@@ -139,9 +139,9 @@ const Experience = () => {
                       {edu.institution}
                     </p>
                     <div className="flex items-center text-muted-foreground mb-4">
-                      <Calendar className="w-4 h-4 mr-1" />
+                      <CalendarToday className="w-4 h-4 mr-1" />
                       <span className="text-sm mr-4">{edu.duration}</span>
-                      <MapPin className="w-4 h-4 mr-1" />
+                      <LocationOn className="w-4 h-4 mr-1" />
                       <span className="text-sm">{edu.location}</span>
                     </div>
                     <div className="flex items-center mb-4">

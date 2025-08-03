@@ -1,4 +1,4 @@
-import { Heart, ArrowUp, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Favorite, KeyboardArrowUp, GitHub, LinkedIn, Twitter, Email } from '@mui/icons-material';
 import { Button } from '@/components/ui/button';
 import portfolioData from '@/data/portfolio.json';
 
@@ -18,8 +18,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: Github, url: portfolioData.personal.social.github },
-    { name: 'LinkedIn', icon: Linkedin, url: portfolioData.personal.social.linkedin },
+    { name: 'GitHub', icon: GitHub, url: portfolioData.personal.social.github },
+    { name: 'LinkedIn', icon: LinkedIn, url: portfolioData.personal.social.linkedin },
     { name: 'Twitter', icon: Twitter, url: portfolioData.personal.social.twitter }
   ];
 
@@ -78,7 +78,7 @@ const Footer = () => {
                   href={`mailto:${portfolioData.personal.email}`}
                   className="flex items-center text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Mail className="w-4 h-4 mr-2" />
+                  <Email className="w-4 h-4 mr-2" />
                   Email Me
                 </a>
                 <p className="text-muted-foreground text-sm">
@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center text-muted-foreground mb-4 md:mb-0">
               <span>© {currentYear} {portfolioData.personal.name}. Made with</span>
-              <Heart className="w-4 h-4 mx-2 text-red-500 animate-pulse" />
+              <Favorite className="w-4 h-4 mx-2 text-red-500 animate-pulse" />
               <span>and lots of ☕</span>
             </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
               size="sm"
               className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group"
             >
-              <ArrowUp className="w-4 h-4 mr-2 group-hover:-translate-y-1 transition-transform" />
+              <KeyboardArrowUp className="w-4 h-4 mr-2 group-hover:-translate-y-1 transition-transform" />
               Back to Top
             </Button>
           </div>

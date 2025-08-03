@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Download, MessageCircle } from 'lucide-react';
+import { Download, Chat } from '@mui/icons-material';
 import portfolioData from '@/data/portfolio.json';
 import quotesData from '@/data/quotes.json';
 
@@ -181,7 +181,7 @@ const Hero = () => {
               variant="outline"
               className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth px-8 py-6 text-lg font-semibold group"
             >
-              <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              <Chat className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Let's Talk
             </Button>
           </div>

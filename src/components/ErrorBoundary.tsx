@@ -1,6 +1,6 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { Button } from '@/components/ui/button';
-import { AlertTriangle, RefreshCw } from 'lucide-react';
+import { Warning, Refresh } from '@mui/icons-material';
 
 interface Props {
   children: ReactNode;
@@ -34,7 +34,7 @@ class ErrorBoundary extends Component<Props, State> {
         <div className="min-h-screen flex items-center justify-center bg-background">
           <div className="text-center space-y-6 p-8">
             <div className="w-20 h-20 mx-auto bg-destructive/10 rounded-full flex items-center justify-center">
-              <AlertTriangle className="w-10 h-10 text-destructive" />
+              <Warning className="w-10 h-10 text-destructive" />
             </div>
             <div className="space-y-2">
               <h1 className="text-2xl font-bold text-foreground">
@@ -46,7 +46,7 @@ class ErrorBoundary extends Component<Props, State> {
             </div>
             <div className="space-y-3">
               <Button onClick={this.handleRetry} className="bg-gradient-primary hover:glow-primary">
-                <RefreshCw className="w-4 h-4 mr-2" />
+                <Refresh className="w-4 h-4 mr-2" />
                 Try Again
               </Button>
               <Button 
